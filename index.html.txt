@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表白网页</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffe6e6; /* 粉色背景 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      text-align: center;
+    }
+    h1 {
+      color: #ff4d4d; /* 红色标题 */
+      font-size: 3rem;
+    }
+    .button {
+      background-color: #ff4d4d;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #e60000; /* 深红色 */
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #ff4d4d;
+      display: none; /* 初始隐藏 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>❤️ 我喜欢你 ❤️</h1>
+    <button class="button" onclick="showMessage()">点击这里</button>
+    <p class="message" id="message">我爱你！</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      // 显示隐藏的消息
+      const message = document.getElementById('message');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
